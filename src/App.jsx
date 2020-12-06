@@ -1,7 +1,8 @@
 import GlobalStyle from './themes/GlobalStyle';
 import { Route } from 'wouter'
 import { LayoutBase } from './pages';
-import { Button } from './components';
+import { Button, ButtonIcon } from './components';
+import { File } from './components/icons';
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
         <Button>
           ACEPTAR
         </Button>
+        <ButtonIcon>
+          <File/>
+        </ButtonIcon>
       </LayoutBase>
     </>
   );

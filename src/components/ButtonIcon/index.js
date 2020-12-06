@@ -1,7 +1,7 @@
 import React from 'react';
-import { ButtonStyled } from './button.styles';
+import { ButtonStyled, IconStyled } from './buttonIcon.styles';
 
-const ButtonIcon = (props) => {
+const Button = (props) => {
     const {
         children,
         onClick,
@@ -16,12 +16,15 @@ const ButtonIcon = (props) => {
             onClick={onClick}
             style={style} 
             disabled={disabled}
-            color={color}
             size={size}
             >
-            {children}
+            <IconStyled
+                color={color}
+            >
+                {children}
+            </IconStyled>
         </ButtonStyled>
     )
 }
 
-export default ButtonIcon;
+export default Button;
