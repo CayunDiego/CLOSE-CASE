@@ -1,16 +1,14 @@
 import GlobalStyle from './themes/GlobalStyle';
 import { Route } from 'wouter'
-import { LayoutBase } from './pages';
-import { Footer, Header } from './components';
-import { File } from './components/icons';
+import { LayoutBase, Splash } from './pages';
+
 
 function App() {
   return (
     <>
       <GlobalStyle/>
       <LayoutBase>
-        <Header/>
-        <Footer/>
+        <Route path="/" component={Splash}/>
       </LayoutBase>
     </>
   );
