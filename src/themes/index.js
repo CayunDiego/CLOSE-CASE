@@ -53,5 +53,5 @@ export const typography = {
 
 export const breakpoints = {
     maxMobile:  '25rem',
-    mobile: '26rem',
+    mobile: '27rem',
 };
