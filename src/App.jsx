@@ -1,6 +1,8 @@
 import GlobalStyle from './themes/GlobalStyle';
 import { Route } from 'wouter'
-import { LayoutBase, Splash } from './pages';
+import { LayoutBase, 
+         Splash, 
+         Onboarding } from './pages';
 
 
 function App() {
@@ -8,7 +10,8 @@ function App() {
     <>
       <GlobalStyle/>
       <LayoutBase>
-        <Route path="/" component={Splash}/>
+          <Route path="/" component={Splash}/>
+          <Route path="/onboarding" component={Onboarding}/>
       </LayoutBase>
     </>
   );

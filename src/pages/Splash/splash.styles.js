@@ -10,10 +10,13 @@ export const SplashStyled = styled.div`
 
 export const Row1 = styled.div`
   background: url('/assets/Vector1.svg') no-repeat;
+  width: 100%;
+  background-size: 117%;
 `;
 
 export const Row2 = styled.div`
   width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,4 +27,6 @@ export const Row2 = styled.div`
 
 export const Row3 = styled.div`
   background: url('/assets/Vector2.svg') no-repeat;
+  width: 100%;
+  background-size: 117%;
 `;

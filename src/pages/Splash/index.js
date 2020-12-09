@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { SplashStyled, Row1, Row2, Row3 } from './splash.styles';
 
 const Splash = () => {
@@ -13,4 +13,4 @@ const Splash = () => {
     )
 }
 
-export default Splash
+export default Splash;
