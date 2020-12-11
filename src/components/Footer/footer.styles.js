@@ -4,7 +4,6 @@ import { colors } from '../../themes';
 export const FooterNavbarStyled = styled.nav`
     height: 4.5625rem;
     /* border-top: 2px solid #eee;  */
-    position: sticky;
     width: 100%;
     display: flex;
     align-items: center;

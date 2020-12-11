@@ -8,7 +8,7 @@ import {
 } from './header.styles';
 
 const Header = () => {
-    const [sideDraweOpen, setsideDraweOpen] = useState(true);
+    const [sideDraweOpen, setsideDraweOpen] = useState(false);
 
     const drawerToggleClick = () =>{
         setsideDraweOpen(!sideDraweOpen);

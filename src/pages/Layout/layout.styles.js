@@ -26,3 +26,41 @@ export const ContainerStyled = styled.div`
             border-radius: 10px;
     }
 `;
+
+export const LayoutMainStyled = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: ${({color}) => color ? colors.blue.gradient : colors.white};
+`;
+
+export const ContainerMainStyled = styled.main`
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    overflow-y: auto;
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    ::-webkit-scrollbar:vertical {
+        width:2px;
+    }
+    ::-webkit-scrollbar-button:increment {
+        display: none;
+    }
+    ::-webkit-scrollbar-button {
+        display: none;
+    }
+    ::-webkit-scrollbar:horizontal {
+        height: 2px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: ${colors.grey};
+        border-radius: 20px;
+        /* border: 2px solid #f1f2f3; */
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 8px;
+    }
+`;

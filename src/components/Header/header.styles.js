@@ -3,9 +3,7 @@ import { colors } from '../../themes';
 
 export const HeaderStyled = styled.header`
     box-shadow: 0px 0px 6px -4px rgba(0,0,0,0.75);
-    height: 7.5625rem;
-    position: sticky;
-    top: -1;
+    min-height: 7.5625rem;
     width: 100%;
     z-index: 100;
 `;
@@ -21,4 +19,6 @@ export const ContainerStyled = styled.div`
     justify-content: space-between;
     background-color: ${colors.blue.base};
     padding: .8125rem .9375rem;
+    border-top: 2px solid ${colors.white};
+    border-bottom: 2px solid ${colors.white};
 `;

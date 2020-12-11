@@ -4,25 +4,28 @@ import { colors, typography } from '../../themes';
 export const ButtonStyled = styled.button`
     font-family:  ${typography.fonts.base};
     font-weight:  ${typography.weights.regular};
-    font-size: .8rem;  
-    color: ${colors.white};
-    padding: 1.25rem 1rem;
-    border-radius: 22px;
+    font-size: 1.125rem;
+    color: ${colors.blue.light};
+    padding: .625rem 1rem;
+    border-radius: 1.375rem;
     border: 2px solid ${colors.white};
-    width: 8.875rem;
-    height: 8.875rem;
+    width: 16.3125rem;
+    height: 3.25rem;
     outline: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    background-color: ${colors.blue.base};
+    background-color: ${colors.white};
     cursor: pointer;
 `;
 
 export const IconStyled = styled.div`
-    width: 80%;
+    width: 2rem;
+    height: 2rem;
     >svg{
-        fill: ${colors.white};
+        fill: ${colors.blue.light};
+        width: 2rem;
+        height: 2rem;
     }
 `;
