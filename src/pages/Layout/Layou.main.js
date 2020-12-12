@@ -18,7 +18,6 @@ const LayouMain = ({children}) => {
         }
     }, [path])
 
-
     return (
         <LayoutMainStyled color={!home}>
             <Header/>
