@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LayouAuth from '../Layout/Layout.auth';
 import { LoginStyled, FormStyled, LinkSigup, LinkRecover } from './login.styles';
-import { Title, Input, Button, ButtonSocial } from '../../components';
+import { Title, Input, Button, ButtonSocial, PopupRecover } from '../../components';
 import { Google } from '../../components/icons';
 import { useLocation } from 'wouter';
 
 const Login = () => {
     const [, pushLocation] = useLocation();
+    const [popUp, setPopUp] = useState(false);
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -15,6 +16,9 @@ const Login = () => {
 
     return (
         <LayouAuth>
+            { 
+                popUp && <PopupRecover/>
+            }
             <LoginStyled>
                 <Title>
                     Iniciar Sesión
@@ -38,7 +42,7 @@ const Login = () => {
                 </FormStyled>
                 <LinkSigup to='/auth/sigup'>REGISTRARTE</LinkSigup>
                 <p>¿Olvidaste Usuario / Contraseña?</p>
-                <LinkRecover to='/auth/recover'>HAZ CLICK AQUÍ</LinkRecover>
+                <LinkRecover onClick={()=> setPopUp(true)}>HAZ CLICK AQUÍ</LinkRecover>
                 <ButtonSocial
                     icon={<Google/>}
                 >

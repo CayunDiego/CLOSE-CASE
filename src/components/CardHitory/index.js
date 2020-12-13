@@ -1,5 +1,6 @@
 import React from 'react';
 import { CardHitoryStyled, IconStyled, ContainerStyled, RowStyled } from './CardHitory.styles';
+import { CircleRow } from '../icons';
 
 const CardHitory = (props) => {
     const {
@@ -21,7 +22,7 @@ const CardHitory = (props) => {
                     23/02/20 - PENAL
                 </RowStyled>
             </ContainerStyled>
-            <IconStyled></IconStyled>
+            <IconStyled><CircleRow/></IconStyled>
         </CardHitoryStyled>
     )
 }

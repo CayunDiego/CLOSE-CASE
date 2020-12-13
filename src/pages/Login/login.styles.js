@@ -37,11 +37,22 @@ export const LinkSigup = styled(Link)(()=>{
 `
 });
 
-export const LinkRecover = styled(Link)(()=>{
+/* export const LinkRecover = styled(button)(()=>{
     return css`
         text-decoration: none;
         color: #4D639D;
         font-size: .875rem;
         margin-bottom: 2.3125rem;
 `
-});
+}); */
+
+export const LinkRecover = styled.button`
+        text-decoration: none;
+        color: #4D639D;
+        font-size: .875rem;
+        margin-bottom: 2.3125rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+`;

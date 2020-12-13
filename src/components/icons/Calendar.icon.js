@@ -4,8 +4,6 @@ const Calendar = (props) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width={36.449}
-            height={36.448}
             viewBox="0 0 36.449 36.448"
             {...props}
         >

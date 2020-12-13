@@ -2,19 +2,19 @@ import React from 'react';
 import { ButtonsGridStyled, HomeStyled } from './home.styles';
 import LayouMain from '../Layout/Layout.main';
 import { ButtonBig, ButtonAdd } from '../../components';
-import { Add, Search } from '../../components/icons';
+import { Add, Search, File, ClipBoard, BellActive, Calendar, Users } from '../../components/icons';
 import { useLocation } from 'wouter';
 
 const Home = () => {
     const [, pushLocation ] = useLocation();
 
     const itemsButtons = [
-        {name: 'Agenda', icon: <Search/>},
-        {name: 'Casos en Proceso', icon: <Search/>},
-        {name: 'Historial de Casos', icon: <Search/>},
+        {name: 'Agenda', icon: <Users/>},
+        {name: 'Casos en Proceso', icon: <ClipBoard/>},
+        {name: 'Historial de Casos', icon: <File/>},
         {name: 'Buscador', icon: <Search/>},
-        {name: 'Notificaciones', icon: <Search/>},
-        {name: 'Calendario', icon: <Search/>, onClick: ()=>pushLocation('/calendar')}
+        {name: 'Notificaciones', icon: <BellActive/>},
+        {name: 'Calendario', icon: <Calendar/>, onClick: ()=>pushLocation('/calendar')}
     ];
 
     return (

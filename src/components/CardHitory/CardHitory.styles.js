@@ -34,7 +34,11 @@ export const RowStyled = styled.div`
 export const IconStyled = styled.div`
     min-width: 4.375rem;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     >svg{
         fill: ${colors.white};
+        height: 2.375rem;
     }
 `;

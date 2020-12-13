@@ -8,3 +8,11 @@ export const CalendarStyled = styled.div`
     flex-direction: column;
     align-items: center;
 `;
+
+export const ListCases = styled.div`
+    padding: 1.6875rem 0;
+    width: 100%;
+    display: grid;
+    row-gap: 1.5625rem;
+    justify-items: center;
+`;
