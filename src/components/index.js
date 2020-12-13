@@ -4,9 +4,12 @@ import ButtonAdd from './ButtonAdd';
 import ButtonBig from './ButtonBig';
 import ButtonIcon from './ButtonIcon';
 import CardCaseBig from './CardCaseBig';
+import CardHitory from './CardHitory';
 import CardUser from './CardUser';
 import Footer from './Footer';
 import Header from './Header';
+import Input from './Input';
+import SelectFilter from './SelectFilter';
 import Title from './Title';
 
 export{
@@ -16,8 +19,11 @@ export{
     ButtonBig,
     ButtonIcon,
     CardCaseBig,
+    CardHitory,
     CardUser,
     Footer,
     Header,
+    Input,
+    SelectFilter,
     Title
 };

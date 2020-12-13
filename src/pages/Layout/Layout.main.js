@@ -6,7 +6,7 @@ import {
 import { Header, Footer } from '../../components';
 import { useLocation } from 'wouter';
 
-const LayouMain = ({children}) => {
+const LayoutMain = ({children}) => {
     const [ home, setHome ] = useState(true);
     const [ path ] = useLocation();
 
@@ -31,4 +31,4 @@ const LayouMain = ({children}) => {
     )
 }
 
-export default LayouMain;
+export default LayoutMain;

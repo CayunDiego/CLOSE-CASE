@@ -1,7 +1,7 @@
 import React from 'react';
 import { CalendarStyled } from './calendar.styles';
-import LayouMain from '../Layout/Layou.main';
-import { Title, CardCaseBig } from '../../components';
+import LayouMain from '../Layout/Layout.main';
+import { Title, CardCaseBig, CardHitory } from '../../components';
 
 const Calendar = () => {
     return (
@@ -11,6 +11,7 @@ const Calendar = () => {
                     Calendario
                 </Title>
                 <CardCaseBig/>
+                <CardHitory/>
             </CalendarStyled>
         </LayouMain>
     )

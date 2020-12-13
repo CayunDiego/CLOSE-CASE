@@ -1,6 +1,6 @@
 import React from 'react';
 import { ButtonsGridStyled, HomeStyled } from './home.styles';
-import LayouMain from '../Layout/Layou.main';
+import LayouMain from '../Layout/Layout.main';
 import { ButtonBig, ButtonAdd } from '../../components';
 import { Add, Search } from '../../components/icons';
 import { useLocation } from 'wouter';
