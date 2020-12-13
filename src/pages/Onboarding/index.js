@@ -32,7 +32,7 @@ const Onboarding = () => {
     return (
         <OnboardingStyled>
             <OneStyled>
-                <button onClick={()=>pushLocation('/home')}>
+                <button onClick={()=>pushLocation('/auth/login')}>
                     OMITIR
                 </button>
             </OneStyled>

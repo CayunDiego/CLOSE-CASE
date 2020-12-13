@@ -24,6 +24,7 @@ export const InputStyled = styled.input`
     outline: 0;
     transition: border-color 0.2s;
     font-size: 1.125rem;
+    color: #585858;
     &&:focus {
         border: 2px solid ${colors.grey.dark};
     }

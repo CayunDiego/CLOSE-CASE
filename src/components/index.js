@@ -3,6 +3,7 @@ import Button from './Button';
 import ButtonAdd from './ButtonAdd';
 import ButtonBig from './ButtonBig';
 import ButtonIcon from './ButtonIcon';
+import ButtonSocial from './ButtonSocial';
 import CardCaseBig from './CardCaseBig';
 import CardHitory from './CardHitory';
 import CardUser from './CardUser';
@@ -18,6 +19,7 @@ export{
     ButtonAdd,
     ButtonBig,
     ButtonIcon,
+    ButtonSocial,
     CardCaseBig,
     CardHitory,
     CardUser,
