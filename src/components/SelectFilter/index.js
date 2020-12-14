@@ -6,7 +6,8 @@ import {SelectFilterStyled,
         OptionsStyled,
         ButtonOptionStyled,
         ArrowStyled,
-        NameStyle
+        NameStyle,
+        LabelStyled
     } from './selectFilter.styles';
 
 // const options = [
@@ -17,7 +18,7 @@ import {SelectFilterStyled,
 //     {name: 'Favoritos', icon: ''},
 // ]
 
-const SelectFilter = ({options}) => {
+const SelectFilter = ({options, label}) => {
     const [select, setSelect] = useState(options[0]);
     const [draweOpen, setDraweOpen] = useState(false);
 
@@ -32,6 +33,9 @@ const SelectFilter = ({options}) => {
 
     return (
         <SelectFilterStyled>
+                        <LabelStyled>
+                            {label}
+                        </LabelStyled>
                        <SelectStyled onClick={drawerToggleClick} show={draweOpen} >
                            <SelectedOption >
                                <NameStyle>{select.name}</NameStyle>

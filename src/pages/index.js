@@ -1,4 +1,6 @@
 import Calendar from './Calendar';
+import CaseHistory from './CaseHistory';
+import CasesProcess from './CasesProcess';
 import Home from './Home';
 import LayoutBase from './Layout/LayoutBase';
 import Login from './Login';
@@ -9,6 +11,8 @@ import Splash from './Splash';
 
 export {
     Calendar,
+    CaseHistory,
+    CasesProcess,
     Home,
     LayoutBase,
     Login,

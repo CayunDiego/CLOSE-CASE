@@ -5,7 +5,6 @@ import { Title,
          CardCaseBig, 
          CalendarDataPicker } from '../../components';
 
-
 const Calendar = () => {
     return (
         <LayouMain>

@@ -11,6 +11,7 @@ import CardUser from './CardUser';
 import Footer from './Footer';
 import Header from './Header';
 import Input from './Input';
+import InputSearch from './InputSearch';
 import PopupRecover from './PopupRecover';
 import SelectFilter from './SelectFilter';
 import Title from './Title';
@@ -29,6 +30,7 @@ export{
     Footer,
     Header,
     Input,
+    InputSearch,
     PopupRecover,
     SelectFilter,
     Title

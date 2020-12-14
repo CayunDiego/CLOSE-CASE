@@ -19,8 +19,8 @@ const NavSideDrawer = ({show, setShow}) => {
         {name: 'Crear Caso', icon: <Add/> , url: '/'},
         {name: 'Agenda', icon: <Diary/> , url: '/'},
         {name: 'Calendario', icon: <Calendar/> , url: '/calendar'},
-        {name: 'Casos en proceso', icon: <ClipBoard/> , url: '/'},
-        {name: 'Historial de Casos', icon: <File/> , url: '/'},
+        {name: 'Casos en proceso', icon: <ClipBoard/> , url: '/casesProcess'},
+        {name: 'Historial de Casos', icon: <File/> , url: '/caseHistory'},
         {name: 'Configuración', icon: <Setting/> , url: '/'},
     ];
 

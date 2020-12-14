@@ -8,6 +8,7 @@ export const SelectFilterStyled = styled.div`
     user-select: none;
     appearance: none;
     outline: none;
+    z-index: 10;
 `;
 
 export const SelectStyled = styled.div`
@@ -86,4 +87,10 @@ export const IconStyled = styled.div`
 
 export const NameStyle = styled.p`
    
+`;
+
+export const LabelStyled = styled.label`
+    font-size: 1.125rem;
+    font-weight:  ${typography.weights.regular};
+    cursor: pointer;
 `;
