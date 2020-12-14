@@ -5,6 +5,7 @@ import { Menu, BellActive } from '../icons';
 import {
     ContainerStyled,
     HeaderStyled,
+    ImgStyled
 } from './header.styles';
 
 const Header = () => {
@@ -25,7 +26,7 @@ const Header = () => {
                         <ButtonIcon onClick={drawerToggleClick}>
                             <Menu/>
                         </ButtonIcon>
-                        <p>LOGOOOOO</p>
+                        <ImgStyled src='/assets/logoBlanco.svg' alt="logo"/>
                         <ButtonIcon >
                             <BellActive/>
                         </ButtonIcon>

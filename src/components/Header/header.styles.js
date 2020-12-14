@@ -22,3 +22,8 @@ export const ContainerStyled = styled.div`
     border-top: 2px solid ${colors.white};
     border-bottom: 2px solid ${colors.white};
 `;
+
+export const ImgStyled = styled.img`
+    width: 8rem;
+    height: auto;
+`;

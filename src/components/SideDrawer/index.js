@@ -7,7 +7,7 @@ import {
 const SideDrawer = ({click, sideDraweOpen}) => {
     return (
         <>
-            <NavSideDrawer show={sideDraweOpen}/>
+            <NavSideDrawer show={sideDraweOpen} setShow={click}/>
             {sideDraweOpen && (<BackdropStyled onClick={click}/>)}
         </>
     )

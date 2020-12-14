@@ -4,7 +4,8 @@ import {
         ContainerMainStyled,
         HeaderStyled,
         ContaineHeaderStyled,
-        FooterStyled
+        FooterStyled,
+        ImgStyled
     } from './layout.styles';
 import { useLocation } from 'wouter';
 import { ButtonIcon } from '../../components';
@@ -26,7 +27,7 @@ const LayoutAuth = ({children}) => {
         <LayoutAuthStyled>
              <HeaderStyled>
                 <ContaineHeaderStyled>
-                        <p>LOGOOOOO</p>
+                    <ImgStyled src='/assets/logoBlanco.svg' alt="logo"/>
                 </ContaineHeaderStyled>
             </HeaderStyled>
             <ContainerMainStyled>

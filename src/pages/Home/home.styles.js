@@ -14,4 +14,5 @@ export const ButtonsGridStyled = styled.div`
     grid-template-columns: 1fr 1fr;
     column-gap: 1.375rem;
     row-gap: .8rem;
+    padding: 1rem 0;
 `;

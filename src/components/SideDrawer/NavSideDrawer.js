@@ -8,20 +8,26 @@ import {
 import CardUser from '../CardUser';
 import ButtonSidebar from './ButtonSidebar';
 import { Home, Add, Calendar, ClipBoard, File, Diary, Setting } from '../icons';
+import { useLocation } from 'wouter';
 
 
-const NavSideDrawer = ({show}) => {
-    // const [, pushLocation] = useLocation();
+const NavSideDrawer = ({show, setShow}) => {
+    const [, pushLocation] = useLocation();
 
     const sidebarButton = [
-        {name: 'Inicio', icon: <Home/>},
-        {name: 'Crear Caso', icon: <Add/>},
-        {name: 'Agenda', icon: <Diary/>},
-        {name: 'Calendario', icon: <Calendar/>},
-        {name: 'Casos en proceso', icon: <ClipBoard/>},
-        {name: 'Historial de Casos', icon: <File/>},
-        {name: 'Configuración', icon: <Setting/>},
-    ]
+        {name: 'Inicio', icon: <Home/> , url: '/home'},
+        {name: 'Crear Caso', icon: <Add/> , url: '/'},
+        {name: 'Agenda', icon: <Diary/> , url: '/'},
+        {name: 'Calendario', icon: <Calendar/> , url: '/calendar'},
+        {name: 'Casos en proceso', icon: <ClipBoard/> , url: '/'},
+        {name: 'Historial de Casos', icon: <File/> , url: '/'},
+        {name: 'Configuración', icon: <Setting/> , url: '/'},
+    ];
+
+    const handleOnClick = button => {
+        pushLocation(button.url);
+        setShow(prev => !prev);
+    }
 
     return (
         <SideDrawerStyled show={show}>
@@ -34,6 +40,7 @@ const NavSideDrawer = ({show}) => {
                         <ButtonSidebar
                             key={index}
                             icon={button.icon}
+                            onClick={() => handleOnClick(button)}
                         >
                             {button.name}
                         </ButtonSidebar>

@@ -109,3 +109,8 @@ export const FooterStyled = styled.div`
     justify-content: flex-end;
     padding: .1em 1.125rem;
 `;
+
+export const ImgStyled = styled.img`
+    width: 11.4rem;
+    height: auto;
+`;

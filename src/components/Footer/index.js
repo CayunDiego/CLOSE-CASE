@@ -5,7 +5,7 @@ import { Home, Add, Search } from '../icons';
 import {useLocation} from 'wouter';
 
 const itemsbutton = [
-    {name: 'Home' ,message: '', url: '/', icon: <Home/>, event: false},
+    {name: 'Home' ,message: '', url: '/home', icon: <Home/>, event: false},
     {name: 'Add' ,message: '', url: '/', icon: <Add/>, event: false},
     {name: 'Portfolio', message: '', url: '', icon: <Search/>, event: true}
 ]
@@ -26,7 +26,7 @@ const Footer = () => {
                     itemsbutton.map( (button, index) => 
                         <ButtonIcon 
                             color='secondary'
-                            size='medium'
+                            size='small'
                             key={index}
                             onClick={() => handleOnClick(button)}
                         >
