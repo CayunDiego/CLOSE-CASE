@@ -18,7 +18,7 @@ import {SelectFilterStyled,
 //     {name: 'Favoritos', icon: ''},
 // ]
 
-const SelectFilter = ({options, label}) => {
+const SelectFilter = ({options, label, style}) => {
     const [select, setSelect] = useState(options[0]);
     const [draweOpen, setDraweOpen] = useState(false);
 
@@ -32,7 +32,7 @@ const SelectFilter = ({options, label}) => {
     }
 
     return (
-        <SelectFilterStyled>
+        <SelectFilterStyled style={style}>
                         <LabelStyled>
                             {label}
                         </LabelStyled>

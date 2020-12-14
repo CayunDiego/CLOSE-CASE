@@ -16,7 +16,7 @@ const NavSideDrawer = ({show, setShow}) => {
 
     const sidebarButton = [
         {name: 'Inicio', icon: <Home/> , url: '/home'},
-        {name: 'Crear Caso', icon: <Add/> , url: '/'},
+        {name: 'Crear Caso', icon: <Add/> , url: '/addCase'},
         {name: 'Agenda', icon: <Diary/> , url: '/'},
         {name: 'Calendario', icon: <Calendar/> , url: '/calendar'},
         {name: 'Casos en proceso', icon: <ClipBoard/> , url: '/casesProcess'},

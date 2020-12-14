@@ -7,9 +7,11 @@ import {
     HeaderStyled,
     ImgStyled
 } from './header.styles';
+import { useLocation } from 'wouter';
 
 const Header = () => {
     const [sideDraweOpen, setsideDraweOpen] = useState(false);
+    const [, pushLocation] = useLocation();
 
     const drawerToggleClick = () =>{
         setsideDraweOpen(!sideDraweOpen);
@@ -27,7 +29,9 @@ const Header = () => {
                             <Menu/>
                         </ButtonIcon>
                         <ImgStyled src='/assets/logoBlanco.svg' alt="logo"/>
-                        <ButtonIcon >
+                        <ButtonIcon 
+                            onClick={()=>pushLocation('/notifications')}
+                        >
                             <BellActive/>
                         </ButtonIcon>
                     </ContainerStyled>
