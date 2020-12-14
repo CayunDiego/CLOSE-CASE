@@ -1,14 +1,17 @@
 import GlobalStyle from './themes/GlobalStyle';
-import { Route } from 'wouter'
-import { Calendar,
-         Home,
-         LayoutBase,
-         Login,
-         Onboarding,
-         RecoverAccount,
-         Splash,
-         Sigup,
-        } from './pages';
+import { Route } from 'wouter';
+import {
+  Calendar,
+  CaseProfile,
+  Home,
+  LayoutBase,
+  Login,
+  Onboarding,
+  RecoverAccount,
+  Splash,
+  Sigup,
+  UserProfile
+} from './pages';
 
 
 function App() {
@@ -23,9 +26,11 @@ function App() {
           <Route path="/home" component={Home}/>
           <Route path="/onboarding" component={Onboarding}/>
           <Route path="/calendar" component={Calendar}/>
+          <Route path="/profile/case" component={CaseProfile}/>
+          <Route path="/profile/user" component={UserProfile}/>
       </LayoutBase>
     </>
-  );  
+  );
 }
 
 export default App;

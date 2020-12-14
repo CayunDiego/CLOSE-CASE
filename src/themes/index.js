@@ -1,7 +1,8 @@
 export const colors = {
     red: {
         base: '#F44336',         /// SE USA EN LA CAMPANITA DE NOTIFICACIONES Y EN UN BOTON QUE DICE "FINALIZAR CASO"
-        },
+        button: '#BF0000'        /// SE USA EN EL BOTÓN DEL PERFIL DE LOS CASOS
+    },
 
     green: {
         base: '#00BF1F',        /// SE USA EN UN BOTON QUE DICE "ACTIVAR CASO"
@@ -38,6 +39,7 @@ export const typography = {
         base: '"roboto", sans-serif',
     },
     sizes: {
+        minimum: '0.6875rem',
         p: '0.875rem',
         h1: '1.5rem',
         h2: '1.125rem'
@@ -48,6 +50,7 @@ export const typography = {
         medium: 500,
         regular: 400,
         light: 300,
+        extraLight: 200
     },
 };
 

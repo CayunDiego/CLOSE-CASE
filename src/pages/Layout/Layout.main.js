@@ -16,7 +16,7 @@ const LayoutMain = ({children}) => {
         } else {
             setHome(true);
         }
-    }, [path])
+    }, [path]);
 
     return (
         <LayoutMainStyled color={!home}>
@@ -28,7 +28,7 @@ const LayoutMain = ({children}) => {
                 home &&  <Footer/>
             }
         </LayoutMainStyled>
-    )
+    );
 }
 
 export default LayoutMain;

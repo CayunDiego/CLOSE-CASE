@@ -1,6 +1,6 @@
 // globalStyles.js
 import { createGlobalStyle } from 'styled-components';
-import { colors, typography } from './index';
+import { typography } from './index';
 
 const GlobalStyle = createGlobalStyle`
     html,

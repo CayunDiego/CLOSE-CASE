@@ -7,9 +7,11 @@ import ButtonSocial from './ButtonSocial';
 import CalendarDataPicker from './CalendarDataPicker';
 import CardCaseBig from './CardCaseBig';
 import CardHitory from './CardHitory';
+import CardInformation from './CardInformation';
 import CardUser from './CardUser';
 import Footer from './Footer';
 import Header from './Header';
+import HeadProfile from './HeadProfile';
 import Input from './Input';
 import PopupRecover from './PopupRecover';
 import SelectFilter from './SelectFilter';
@@ -25,9 +27,11 @@ export{
     CalendarDataPicker,
     CardCaseBig,
     CardHitory,
+    CardInformation,
     CardUser,
     Footer,
     Header,
+    HeadProfile,
     Input,
     PopupRecover,
     SelectFilter,

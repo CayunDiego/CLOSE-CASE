@@ -10,6 +10,7 @@ import CircleRow from './CircleRow.icon';
 import ClipBoard from './ClipBoard.icon';
 import Diary from './Diary.icon';
 import Document from './Document.icon';
+import Edit from './Edit.icon';
 import File from './File.icon';
 import Google from './Google.icon';
 import Home from './Home.icon';
@@ -19,6 +20,7 @@ import Menu from './Menu.icon';
 import Search from './Search.icon';
 import Setting from './Setting.icon';
 import Share from './Share.icon';
+import Sheet from './Share.icon';
 import Spreadsheet from './Spreadsheet.icon';
 import Tools from './Tools.icon';
 import Users from './Users.icon';
@@ -36,6 +38,7 @@ export{
  ClipBoard,
  Diary,
  Document,
+ Edit,
  File,
  Google,
  Home,
@@ -45,6 +48,7 @@ export{
  Search,
  Setting,
  Share,
+ Sheet,
  Spreadsheet,
  Tools,
  Users
