@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
         LayoutMainStyled,
         ContainerMainStyled
     } from './layout.styles';
-import { Header, Footer } from '../../components';
+import { Header, Footer, PopupSearch } from '../../components';
 import { useLocation } from 'wouter';
+import searchContext from '../../context/searchContext';
 
 const LayoutMain = ({children}) => {
     const [ home, setHome ] = useState(true);
     const [ path ] = useLocation();
+    const { search } = useContext(searchContext);
 
     useEffect(() => {
         if( path.includes('/home') ){
@@ -20,6 +22,9 @@ const LayoutMain = ({children}) => {
 
     return (
         <LayoutMainStyled color={!home}>
+            {
+                search && <PopupSearch/>
+            }
             <Header/>
             <ContainerMainStyled>
                 {children}

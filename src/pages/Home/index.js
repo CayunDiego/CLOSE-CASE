@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { ButtonsGridStyled, HomeStyled } from './home.styles';
 import LayouMain from '../Layout/Layout.main';
 import { ButtonBig, ButtonAdd } from '../../components';
 import { Add, Search, File, ClipBoard, BellActive, Calendar, Users } from '../../components/icons';
 import { useLocation } from 'wouter';
+import searchContext from '../../context/searchContext';
 
 const Home = () => {
     const [, pushLocation ] = useLocation();
+    const { search, setSearch } = useContext(searchContext);
 
     const itemsButtons = [
         {name: 'Agenda', icon: <Users/>},
-        {name: 'Casos en Proceso', icon: <ClipBoard/>},
-        {name: 'Historial de Casos', icon: <File/>},
-        {name: 'Buscador', icon: <Search/>},
-        {name: 'Notificaciones', icon: <BellActive/>},
+        {name: 'Casos en Proceso', icon: <ClipBoard/>, onClick: ()=>pushLocation('/casesProcess')},
+        {name: 'Historial de Casos', icon: <File/>, onClick: ()=>pushLocation('/caseHistory')},
+        {name: 'Buscador', icon: <Search/>, onClick: ()=> setSearch(true)},
+        {name: 'Notificaciones', icon: <BellActive/>, onClick: ()=>pushLocation('/notifications')},
         {name: 'Calendario', icon: <Calendar/>, onClick: ()=>pushLocation('/calendar')}
     ];
 
@@ -35,6 +37,7 @@ const Home = () => {
                 </ButtonsGridStyled>
                 <ButtonAdd
                     icon={<Add/>}
+                    onClick={()=>pushLocation('/addCase')}
                 >
                     CREAR NUEVO CASO
                 </ButtonAdd>

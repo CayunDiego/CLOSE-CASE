@@ -1,22 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FooterNavbarStyled, ContainerStyled } from './footer.styles';
 import ButtonIcon from '../ButtonIcon'
 import { Home, Add, Search } from '../icons';
 import {useLocation} from 'wouter';
+import searchContext from '../../context/searchContext';
 
 const itemsbutton = [
     {name: 'Home' ,message: '', url: '/home', icon: <Home/>, event: false},
-    {name: 'Add' ,message: '', url: '/', icon: <Add/>, event: false},
-    {name: 'Portfolio', message: '', url: '', icon: <Search/>, event: true}
+    {name: 'Add' ,message: '', url: '/addCase', icon: <Add/>, event: false},
+    {name: 'Search', message: '', url: '', icon: <Search/>, event: true}
 ]
 
 const Footer = () => {
     const [ path, pushLocation] = useLocation();
-    const [checked, setChecked] = useState(path);
+    const { search, setSearch } = useContext(searchContext);
 
     const handleOnClick = button => {
-        setChecked(button.url);
         pushLocation(button.url);
+        if(button.event){
+            setSearch(true);
+        }
     }
 
     return (

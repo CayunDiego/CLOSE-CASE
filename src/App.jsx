@@ -1,11 +1,19 @@
 import GlobalStyle from './themes/GlobalStyle';
 import { Route } from 'wouter'
-import { Calendar,
+import { SearchContextProvider } from './context/searchContext';
+import { 
+         AddCase,
+         AddressBook,
+         Calendar,
+         CaseHistory,
+         CasesProcess,
          Home,
          LayoutBase,
          Login,
+         Notifications,
          Onboarding,
          RecoverAccount,
+         Setting,
          Splash,
          Sigup,
         } from './pages';
@@ -16,16 +24,24 @@ function App() {
     <>
       <GlobalStyle/>
       <LayoutBase>
-          <Route path="/" component={Splash}/>
-          <Route path="/auth/login" component={Login}/>
-          <Route path="/auth/sigup" component={Sigup}/>
-          <Route path="/auth/recover" component={RecoverAccount}/>
-          <Route path="/home" component={Home}/>
-          <Route path="/onboarding" component={Onboarding}/>
-          <Route path="/calendar" component={Calendar}/>
+          <SearchContextProvider>
+            <Route path="/" component={Splash}/>
+            <Route path="/auth/login" component={Login}/>
+            <Route path="/auth/sigup" component={Sigup}/>
+            <Route path="/auth/recover" component={RecoverAccount}/>
+            <Route path="/home" component={Home}/>
+            <Route path="/onboarding" component={Onboarding}/>
+            <Route path="/calendar" component={Calendar}/>
+            <Route path="/caseHistory" component={CaseHistory}/>
+            <Route path="/casesProcess" component={CasesProcess}/>
+            <Route path="/addCase" component={AddCase}/>
+            <Route path="/notifications" component={Notifications}/>
+            <Route path="/addressBook" component={AddressBook}/>
+            <Route path="/setting" component={Setting}/>
+          </SearchContextProvider>
       </LayoutBase>
-    </>
+    </> 
   );  
 }
 
-export default App;
+export default App;   
