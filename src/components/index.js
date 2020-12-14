@@ -5,6 +5,7 @@ import ButtonBig from './ButtonBig';
 import ButtonIcon from './ButtonIcon';
 import ButtonSocial from './ButtonSocial';
 import CalendarDataPicker from './CalendarDataPicker';
+import CardAddressBook from './CardAddressBook';
 import CardCaseBig from './CardCaseBig';
 import CardHitory from './CardHitory';
 import CardInformation from './CardInformation';
@@ -13,7 +14,9 @@ import Footer from './Footer';
 import Header from './Header';
 import HeadProfile from './HeadProfile';
 import Input from './Input';
+import InputSearch from './InputSearch';
 import PopupRecover from './PopupRecover';
+import PopupSearch from './PopupSearch';
 import SelectFilter from './SelectFilter';
 import Title from './Title';
 
@@ -25,6 +28,7 @@ export{
     ButtonIcon,
     ButtonSocial,
     CalendarDataPicker,
+    CardAddressBook,
     CardCaseBig,
     CardHitory,
     CardInformation,
@@ -33,7 +37,9 @@ export{
     Header,
     HeadProfile,
     Input,
+    InputSearch,
     PopupRecover,
+    PopupSearch,
     SelectFilter,
     Title
 };
