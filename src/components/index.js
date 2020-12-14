@@ -8,9 +8,11 @@ import CalendarDataPicker from './CalendarDataPicker';
 import CardAddressBook from './CardAddressBook';
 import CardCaseBig from './CardCaseBig';
 import CardHitory from './CardHitory';
+import CardInformation from './CardInformation';
 import CardUser from './CardUser';
 import Footer from './Footer';
 import Header from './Header';
+import HeadProfile from './HeadProfile';
 import Input from './Input';
 import InputSearch from './InputSearch';
 import PopupRecover from './PopupRecover';
@@ -29,9 +31,11 @@ export{
     CardAddressBook,
     CardCaseBig,
     CardHitory,
+    CardInformation,
     CardUser,
     Footer,
     Header,
+    HeadProfile,
     Input,
     InputSearch,
     PopupRecover,

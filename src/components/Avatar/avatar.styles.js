@@ -2,7 +2,7 @@ import styled, {css} from 'styled-components';
 import { colors } from '../../themes';
 
 export const AvatarStyled = styled.div`
-    background: #FFFFFF;
+    background: ${colors.white};
     border: 0.5px solid #898989;
     border-radius: 50%;
     overflow: hidden;

@@ -13,6 +13,7 @@ export const ButtonStyled = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     ${({color}) => changeColors(color)};
     ${({size}) => sizes(size)}
 `;
@@ -28,7 +29,7 @@ const changeColors = color => {
                         /* background-color: ${colors.secondary}; */
                     }
                 `)
-              )
+            )
         case 'secondary':
             return (
                 (css`
@@ -39,11 +40,41 @@ const changeColors = color => {
                     }
                 `)
             )
+        case 'third':
+            return (
+                (css`
+                    background-color: ${colors.red.button};
+                    color: ${colors.white};
+                    font-size: ${typography.sizes.minimum};
+                    &:hover{
+                        /* background-color: ${colors.grey}; */
+                    }
+                `)
+            )
+        case 'four':
+            return (
+                (css`
+                    background-color: ${colors.green.base};
+                    color: ${colors.white};
+                    font-size: ${typography.sizes.minimum};
+                    &:hover{
+                        /* background-color: ${colors.grey}; */
+                    }
+                `)
+            )
     }
 }
 
 const sizes = size => {
         switch (size) {
+            case 'extraSmall':
+                return (
+                    (css`
+                        padding: .625rem .1875rem;
+                        width: 4.75rem;
+                        height: 1.625rem;
+                    `)
+                  )
             case 'small':
                 return (
                     (css`

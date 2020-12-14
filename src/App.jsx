@@ -6,6 +6,7 @@ import {
          AddressBook,
          Calendar,
          CaseHistory,
+         CaseProfile,
          CasesProcess,
          Home,
          LayoutBase,
@@ -16,8 +17,8 @@ import {
          Setting,
          Splash,
          Sigup,
+         UserProfile
         } from './pages';
-
 
 function App() {
   return (
@@ -38,6 +39,8 @@ function App() {
             <Route path="/notifications" component={Notifications}/>
             <Route path="/addressBook" component={AddressBook}/>
             <Route path="/setting" component={Setting}/>
+            <Route path="/profile/case" component={CaseProfile}/>
+            <Route path="/profile/user" component={UserProfile}/>
           </SearchContextProvider>
       </LayoutBase>
     </> 

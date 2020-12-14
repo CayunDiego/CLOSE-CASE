@@ -1,6 +1,7 @@
 import AddCase from './AddCase';
 import AddressBook from './AddressBook';
 import Calendar from './Calendar';
+import CaseProfile from './Profile/Case';
 import CaseHistory from './CaseHistory';
 import CasesProcess from './CasesProcess';
 import Home from './Home';
@@ -12,11 +13,13 @@ import RecoverAccount from './RecoverAccount';
 import Setting from './Setting';
 import Sigup from './Sigup';
 import Splash from './Splash';
+import UserProfile from './Profile/User';
 
 export {
     AddCase,
     AddressBook,
     Calendar,
+    CaseProfile,
     CaseHistory,
     CasesProcess,
     Home,
@@ -27,5 +30,6 @@ export {
     RecoverAccount,
     Setting,
     Sigup,
-    Splash
+    Splash,
+    UserProfile
 };
