@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ButtonsGridStyled, HomeStyled } from './home.styles';
 import LayouMain from '../Layout/Layout.main';
-import { ButtonBig, ButtonAdd } from '../../components';
+import { ButtonBig, ButtonAdd, PopupShare } from '../../components';
 import { Add, Search, File, ClipBoard, BellActive, Calendar, Users } from '../../components/icons';
 import { useLocation } from 'wouter';
 import searchContext from '../../context/searchContext';

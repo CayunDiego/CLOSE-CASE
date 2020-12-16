@@ -17,6 +17,7 @@ import Input from './Input';
 import InputSearch from './InputSearch';
 import PopupRecover from './PopupRecover';
 import PopupSearch from './PopupSearch';
+import PopupShare from './PopupShare';
 import SelectFilter from './SelectFilter';
 import Title from './Title';
 
@@ -40,6 +41,7 @@ export{
     InputSearch,
     PopupRecover,
     PopupSearch,
+    PopupShare,
     SelectFilter,
     Title
 };
