@@ -16,17 +16,10 @@ import { Button } from '../../components';
 import { Users, Link, ArrowDown } from '../../components/icons';
 
 
-const PopupShare = () => {
-
-    const handleClick = e => {
-        e.preventDefault();
-        e.stopPropagation() ;
-        console.log('hola')
-    }
-
+const PopupShare = ({onClick}) => {
     return (
         <PopupSearchStyled>
-            <PopupClickCancel onClick={handleClick}/>
+            <PopupClickCancel onClick={onClick}/>
             <PopupContainerStyled>
                 <HeaderStyled>
                     <IconStyled><Users/></IconStyled>
@@ -40,7 +33,7 @@ const PopupShare = () => {
                                 Editar <ArrowDown width={10} height={9} fill='#515151'/>
                             </SelectTypeStyled>
                         </InputStyled>
-                        <Button color='five'>
+                        <Button color='fifth'>
                             Enviar invitación
                         </Button>
                     </InvitationStyled>

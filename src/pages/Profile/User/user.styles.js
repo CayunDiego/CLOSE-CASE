@@ -8,6 +8,7 @@ export const CaseProfileContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 2rem;
 `;
 
 export const StyledLi = styled.li`
