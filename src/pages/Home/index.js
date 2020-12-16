@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ButtonsGridStyled, HomeStyled } from './home.styles';
 import LayouMain from '../Layout/Layout.main';
-import { ButtonBig, ButtonAdd, PopupShare } from '../../components';
+import { ButtonBig, ButtonAdd } from '../../components';
 import { Add, Search, File, ClipBoard, BellActive, Calendar, Users } from '../../components/icons';
 import { useLocation } from 'wouter';
 import searchContext from '../../context/searchContext';
@@ -11,7 +11,7 @@ const Home = () => {
     const { search, setSearch } = useContext(searchContext);
 
     const itemsButtons = [
-        {name: 'Agenda', icon: <Users/>},
+        {name: 'Agenda', icon: <Users/>, onClick: ()=>pushLocation('/addressBook')},
         {name: 'Casos en Proceso', icon: <ClipBoard/>, onClick: ()=>pushLocation('/casesProcess')},
         {name: 'Historial de Casos', icon: <File/>, onClick: ()=>pushLocation('/caseHistory')},
         {name: 'Buscador', icon: <Search/>, onClick: ()=> setSearch(true)},

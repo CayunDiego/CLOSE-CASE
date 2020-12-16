@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, typography } from '../../themes';
+import { colors } from '../../themes';
 
 
 export const PopupSearchStyled = styled.div`
@@ -26,7 +26,7 @@ export const PopupContainerStyled = styled.div`
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        z-index: 251;
+        z-index: 252;
 `;
 
 export const IconStyled = styled.div`
@@ -65,4 +65,11 @@ export const ListCaseSearch = styled.div`
     width: 90%;
     height: 5rem;
     background-color: ${colors.grey.base}; 
+`;
+
+export const PopupClickCancel = styled.div`
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 251;
 `;
