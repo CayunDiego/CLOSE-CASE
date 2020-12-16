@@ -4,7 +4,7 @@ import LayoutMain from '../../Layout/Layout.main';
 import { HeadProfile, CardInformation, Navbar } from '../../../components';
 import {
     CaseProfileContainer,
-    StyledLi
+    StyledLi,
 } from './user.styles';
 
 const UserProfile = () => {

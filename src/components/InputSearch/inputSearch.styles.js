@@ -10,6 +10,7 @@ export const SearchStyled = styled.div`
     border: 1px solid #898989;
     border-radius: 6px;
     height: 1.9375rem;
+    overflow: hidden;
 `;
 
 export const InputStyled = styled.input.attrs({ type: 'text' })`

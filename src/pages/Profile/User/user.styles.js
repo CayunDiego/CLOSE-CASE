@@ -7,7 +7,6 @@ export const CaseProfileContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding-bottom: 2rem;
 `;
 
@@ -19,6 +18,7 @@ export const StyledLi = styled.li`
     display: flex;
     align-items: center;
     line-height: 16px;
+    color: ${colors.grey.extraDark};
     &::before{
         content: "•";
         color: ${colors.blue.base};

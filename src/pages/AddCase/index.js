@@ -71,6 +71,7 @@ const AddCase = () => {
                     />
                      <Button
                         size='large'
+                        onClick={()=>pushLocation('/profile/new-case')}
                      >
                         ACEPTAR
                      </Button>
