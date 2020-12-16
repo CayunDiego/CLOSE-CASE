@@ -1,6 +1,7 @@
 import Add from './Add.icon';
 import AddReminder from './AddReminder.icon';
 import ArrowBack from './ArrowBack.icon';
+import ArrowDown from './ArrowDown.icon';
 import Avatar from './Avatar.icon';
 import BellActive from './BellActive.icon';
 import Calendar from './Calendar.icon';
@@ -29,6 +30,7 @@ export{
  Add,
  AddReminder,
  ArrowBack,
+ ArrowDown,
  Avatar,
  BellActive,
  Calendar,

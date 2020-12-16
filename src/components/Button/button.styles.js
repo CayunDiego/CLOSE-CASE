@@ -62,6 +62,17 @@ const changeColors = color => {
                     }
                 `)
             )
+        case 'five':
+            return (
+                (css`
+                    background-color: #D3D3D3;
+                    color: ${colors.black};
+                    font-size: ${typography.sizes.minimum};
+                    &:hover{
+                        /* background-color: ${colors.grey}; */
+                    }
+                `)
+            )
     }
 }
 
