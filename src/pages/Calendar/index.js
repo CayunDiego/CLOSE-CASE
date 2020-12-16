@@ -17,9 +17,9 @@ const Calendar = () => {
                 <Title>Calendario</Title>
                 <CalendarDataPicker/>
                 <ListCases>
-                    <CardCaseBig onClick={()=>pushLocation('/profile/new-case')}/>
-                    <CardCaseBig onClick={()=>pushLocation('/profile/new-case')}/>
-                    <CardCaseBig onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/case')}/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/case')}/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/case')}/>
                 </ListCases>
             </CalendarStyled>
         </LayouMain>

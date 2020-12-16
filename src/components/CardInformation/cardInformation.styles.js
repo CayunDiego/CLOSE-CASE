@@ -40,8 +40,10 @@ export const IconStyled = styled.div`
 
 export const H2Styled = styled.h2`
     font-family: ${typography.fonts.base};
-    font-weight: ${typography.weights.regular};
+    font-weight: ${typography.weights.medium};
     font-size: ${typography.sizes.h2};
+    line-height: 24px;
+    color: ${colors.grey.extraDark};
 `;
 
 export const Icon2Styled = styled.button`

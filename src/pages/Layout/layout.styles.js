@@ -79,7 +79,6 @@ export const IconStyled = styled.div`
 `;
 
 export const HeaderStyled = styled.div`
-    box-shadow: 0px 0px 6px -4px rgba(0,0,0,0.75);
     min-height: 7.5625rem;
     width: 100%;
     z-index: 100;
