@@ -1,6 +1,6 @@
 # Welcome to CLOSE-CASE React App!
 
-This project is deployed on Vercel, you can visit the link [here](https://close-case-web-app.vercel.app/profile/user).
+This project is deployed on Vercel, you can visit the link [here](https://close-case-web-app.vercel.app).
 
 ## Available Scripts
 
