@@ -48,7 +48,9 @@ const NavSideDrawer = ({show, setShow}) => {
                 }
             </ContentStyled>
             <FooterStyled>
-                <button>
+                <button
+                    onClick={() => window.location = 'https://close-case.vercel.app/'}
+                >
                     Cerrar Sesión
                 </button>
             </FooterStyled>
