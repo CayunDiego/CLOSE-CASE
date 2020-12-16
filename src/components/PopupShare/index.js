@@ -16,12 +16,6 @@ import { Button } from '../../components';
 import { Users, Link, ArrowDown } from '../../components/icons';
 
 
-const options = [
-    {name: 'A-Z', icon: ''},
-    {name: 'Z-A', icon: ''},
-    {name: 'Fecha', icon: ''},
-];
-
 const PopupShare = () => {
 
     const handleClick = e => {
