@@ -1,0 +1,12 @@
+/*
+  These :not() selectors are for preventing
+  style conflicts with a selected date. You can remove them if you wish!
+*/
+  
+  .navyBlueDay:not(.-selectedStart):not(.-selectedBetween):not(.-selectedEnd):not(.-selected) {
+    border: 2px solid #202B80 !important;
+  }
+
+  .calendarCustom{
+     box-shadow: none;
+  }
