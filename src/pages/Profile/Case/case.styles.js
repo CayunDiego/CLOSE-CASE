@@ -31,6 +31,7 @@ export const IconsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 2rem 0;
 `;
 
 export const IconStyled = styled.button`
@@ -45,4 +46,33 @@ export const IconStyled = styled.button`
         width: 100%;
         height: 100%;
     }
+`;
+
+export const LastContainer = styled.div`
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+`;
+
+export const ImgDocumentStyled = styled.img`
+    margin-top: 2rem;
+`;
+
+export const MainButtonsContainer = styled.div`
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const FirstButtonsContainer = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
 `;
