@@ -1,12 +1,14 @@
 import React from 'react';
-import { NotificationsStyled,
-         ListCases
-        } from './notifications.styles';
+import {
+    NotificationsStyled,
+    ListCases
+} from './notifications.styles';
 import LayouMain from '../Layout/Layout.main';
-import { Title,
-        CardHitory
-    } from '../../components';
- 
+import {
+    Title,
+    CardHistory
+} from '../../components';
+
 const Notifications = () => {
     return (
         <LayouMain>
@@ -15,16 +17,16 @@ const Notifications = () => {
                     Notificaciones
                 </Title>
                 <ListCases>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
                 </ListCases>
             </NotificationsStyled>
         </LayouMain>

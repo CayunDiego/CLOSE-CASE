@@ -1,7 +1,7 @@
 import React from 'react';
 import { Edit } from '../../../components/icons';
 import LayoutMain from '../../Layout/Layout.main';
-import { HeadProfile, CardInformation } from '../../../components';
+import { HeadProfile, CardInformation, Navbar } from '../../../components';
 import {
     CaseProfileContainer,
     StyledLi
@@ -31,6 +31,7 @@ const UserProfile = () => {
                 <HeadProfile
                     userName="Abg. Diego Doello"
                 />
+                <Navbar/>
                 <CardInformation
                     title="Datos de Usuario"
                     children={cardItems}

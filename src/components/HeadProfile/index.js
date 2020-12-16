@@ -11,8 +11,8 @@ import { Avatar, Button } from '../index';
 
 const HeadProfile = (props) => {
     const [ path ] = useLocation();
-    const { date, status, buttonTitle, userName, description } = props;
-    const button = <Button children={buttonTitle} color="third" size="extraSmall"/>
+    const { onClick, buttonColor, date, buttonTitle, userName, description, caseStatus } = props;
+    const button = <Button onClick={onClick} children={buttonTitle} color={buttonColor} size="extraSmall"/>;
 
     return (
         <HeadProfileContainer>
@@ -23,7 +23,7 @@ const HeadProfile = (props) => {
                     <p>{date}</p>
                 </TopContainer>
                 <BottomContainer>
-                    <p>{status}</p>
+                    <p>{caseStatus}</p>
                     {path.includes('/profile/case') ? button : ''}
                 </BottomContainer>
             </Background>

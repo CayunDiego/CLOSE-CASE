@@ -1,24 +1,24 @@
 import GlobalStyle from './themes/GlobalStyle';
-import { Route } from 'wouter'
+import { Route } from 'wouter';
 import { SearchContextProvider } from './context/searchContext';
 import { 
-         AddCase,
-         AddressBook,
-         Calendar,
-         CaseHistory,
-         CaseProfile,
-         CasesProcess,
-         Home,
-         LayoutBase,
-         Login,
-         Notifications,
-         Onboarding,
-         RecoverAccount,
-         Setting,
-         Splash,
-         Sigup,
-         UserProfile
-        } from './pages';
+  AddCase,
+  AddressBook,
+  Calendar,
+  CaseHistory,
+  CaseProfile,
+  CasesProcess,
+  Home,
+  LayoutBase,
+  Login,
+  Notifications,
+  Onboarding,
+  RecoverAccount,
+  Setting,
+  Splash,
+  Sigup,
+  UserProfile
+} from './pages';
 
 function App() {
   return (
@@ -43,8 +43,8 @@ function App() {
             <Route path="/profile/user" component={UserProfile}/>
           </SearchContextProvider>
       </LayoutBase>
-    </> 
-  );  
+    </>
+  );
 }
 
-export default App;   
+export default App;

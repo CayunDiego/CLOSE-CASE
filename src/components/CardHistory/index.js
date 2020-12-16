@@ -1,8 +1,8 @@
 import React from 'react';
-import { CardHitoryStyled, IconStyled, ContainerStyled, RowStyled } from './CardHitory.styles';
 import { CircleRow } from '../icons';
+import { CardHistoryStyled, IconStyled, ContainerStyled, RowStyled } from './CardHistory.styles';
 
-const CardHitory = (props) => {
+const CardHistory = (props) => {
     const {
         children,
         onClick,
@@ -10,7 +10,7 @@ const CardHitory = (props) => {
     } = props;
 
     return (
-        <CardHitoryStyled
+        <CardHistoryStyled
             onClick={onClick}
             disabled={disabled}
         >   
@@ -23,8 +23,8 @@ const CardHitory = (props) => {
                 </RowStyled>
             </ContainerStyled>
             <IconStyled><CircleRow/></IconStyled>
-        </CardHitoryStyled>
-    )
+        </CardHistoryStyled>
+    );
 }
 
-export default CardHitory;
+export default CardHistory;

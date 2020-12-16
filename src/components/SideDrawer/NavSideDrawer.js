@@ -32,7 +32,7 @@ const NavSideDrawer = ({show, setShow}) => {
     return (
         <SideDrawerStyled show={show}>
             <HeaderStyled>
-                <CardUser/>
+                <CardUser onClick={()=>pushLocation('/profile/user')}/>
             </HeaderStyled>
             <ContentStyled>
                 {

@@ -8,7 +8,7 @@ export const CardInformationContainer = styled.div`
     border-radius: 5px;
     background-color: ${colors.white};
     width: 90%;
-    height: 50%;
+    height: auto;
     padding: .5rem;
     display: flex;
     flex-direction: column;

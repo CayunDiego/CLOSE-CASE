@@ -12,6 +12,7 @@ export const CardUserStyled = styled.div`
     width: 100%;
     font-size: 1rem;
     padding: .51625rem;
+    cursor: pointer;
 `;
 
 export const TxtStyled = styled.div`

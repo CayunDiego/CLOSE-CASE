@@ -1,15 +1,17 @@
 import React from 'react';
-import { CaseHistoryStyled,
-         SearchStyled,
-         FilterContainerStyled,
-         ListCases
-        } from './caseHistory.styles';
+import {
+    CaseHistoryStyled,
+    SearchStyled,
+    FilterContainerStyled,
+    ListCases
+} from './caseHistory.styles';
 import LayouMain from '../Layout/Layout.main';
-import { Title, 
-        InputSearch, 
-        SelectFilter,
-        CardHitory
-    } from '../../components';
+import {
+    Title, 
+    InputSearch, 
+    SelectFilter,
+    CardHistory
+} from '../../components';
 
 const optionsType = [
     {name: 'Comercial', icon: ''},
@@ -34,7 +36,7 @@ const CaseHistory = () => {
                 </Title>
                 <SearchStyled>
                     <FilterContainerStyled>
-                         <SelectFilter 
+                        <SelectFilter 
                             label={'Tipo de Caso:'}
                             options={optionsType}/>
                         <SelectFilter 
@@ -44,16 +46,16 @@ const CaseHistory = () => {
                     <InputSearch/>
                 </SearchStyled>
                 <ListCases>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
+                    <CardHistory/>
                 </ListCases>
             </CaseHistoryStyled>
         </LayouMain>
-    )
+    );
 }
 
 export default CaseHistory;

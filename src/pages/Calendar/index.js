@@ -1,9 +1,11 @@
 import React from 'react';
 import { CalendarStyled, ListCases } from './calendar.styles';
 import LayouMain from '../Layout/Layout.main';
-import { Title, 
-         CardCaseBig, 
-         CalendarDataPicker } from '../../components';
+import { 
+    Title, 
+    CardCaseBig, 
+    CalendarDataPicker
+} from '../../components';
 
 const Calendar = () => {
     return (
@@ -14,9 +16,9 @@ const Calendar = () => {
                 </Title>
                 <CalendarDataPicker/>
                 <ListCases>
-                    <CardCaseBig/>
-                    <CardCaseBig/>
-                    <CardCaseBig/>
+                    <CardCaseBig url="/profile/case"/>
+                    <CardCaseBig url="/profile/case"/>
+                    <CardCaseBig url="/profile/case"/>
                 </ListCases>
             </CalendarStyled>
         </LayouMain>
