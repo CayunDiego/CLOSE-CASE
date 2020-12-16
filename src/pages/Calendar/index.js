@@ -6,8 +6,11 @@ import {
     CardCaseBig, 
     CalendarDataPicker
 } from '../../components';
+import { useLocation } from 'wouter';
 
 const Calendar = () => {
+    const [, pushLocation ] = useLocation();
+    
     return (
         <LayouMain>
             <CalendarStyled>
@@ -16,9 +19,9 @@ const Calendar = () => {
                 </Title>
                 <CalendarDataPicker/>
                 <ListCases>
-                    <CardCaseBig url="/profile/case"/>
-                    <CardCaseBig url="/profile/case"/>
-                    <CardCaseBig url="/profile/case"/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/new-case')}/>
                 </ListCases>
             </CalendarStyled>
         </LayouMain>

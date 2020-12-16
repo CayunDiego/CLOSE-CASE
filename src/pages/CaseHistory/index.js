@@ -1,11 +1,12 @@
 import React from 'react';
+import { useLocation } from 'wouter';
+import LayouMain from '../Layout/Layout.main';
 import {
     CaseHistoryStyled,
     SearchStyled,
     FilterContainerStyled,
     ListCases
 } from './caseHistory.styles';
-import LayouMain from '../Layout/Layout.main';
 import {
     Title, 
     InputSearch, 
@@ -26,8 +27,10 @@ const optionsOrder = [
     {name: 'Z-A', icon: ''},
     {name: 'Fecha', icon: ''},
 ];
- 
+
 const CaseHistory = () => {
+    const [, pushLocation ] = useLocation();
+
     return (
         <LayouMain>
             <CaseHistoryStyled>
@@ -46,12 +49,12 @@ const CaseHistory = () => {
                     <InputSearch/>
                 </SearchStyled>
                 <ListCases>
-                    <CardHistory/>
-                    <CardHistory/>
-                    <CardHistory/>
-                    <CardHistory/>
-                    <CardHistory/>
-                    <CardHistory/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
                 </ListCases>
             </CaseHistoryStyled>
         </LayouMain>

@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'wouter';
 import Button from '../Button';
 import { CardCaseBigStyled, HeaderStyled, DisplayStyled } from './cardCaseBig.styles';
 
-const CardCaseBig = ({url}) => {
+const CardCaseBig = ({onClick}) => {
     return (
         <CardCaseBigStyled>
             <HeaderStyled>
@@ -21,9 +20,7 @@ const CardCaseBig = ({url}) => {
                 <p>Recordatorio + </p>
                 <p>anotaciones del abogado</p>
             </DisplayStyled>
-            <Link to={url}>
-                <Button>INGRESAR</Button>
-            </Link>
+            <Button onClick={onClick}>INGRESAR</Button>
         </CardCaseBigStyled>
     )
 }

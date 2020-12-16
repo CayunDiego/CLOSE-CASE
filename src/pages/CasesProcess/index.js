@@ -4,12 +4,13 @@ import { CasesProcessStyled,
          FilterContainerStyled,
          ListCases
         } from './casesProcess.styles';
-import LayouMain from '../Layout/Layout.main';
 import { Title, 
         InputSearch, 
         SelectFilter,
         CardCaseBig
     } from '../../components';
+import { useLocation } from 'wouter';
+import LayouMain from '../Layout/Layout.main';
 
 const optionsType = [
     {name: 'Comercial', icon: ''},
@@ -24,8 +25,10 @@ const optionsOrder = [
     {name: 'Z-A', icon: ''},
     {name: 'Fecha', icon: ''},
 ];
- 
+
 const CasesProcess = () => {
+    const [, pushLocation ] = useLocation();
+
     return (
         <LayouMain>
             <CasesProcessStyled>
@@ -34,7 +37,7 @@ const CasesProcess = () => {
                 </Title>
                 <SearchStyled>
                     <FilterContainerStyled>
-                         <SelectFilter 
+                        <SelectFilter 
                             label={'Casos de Familia:'}
                             options={optionsType}/>
                         <SelectFilter 
@@ -44,12 +47,12 @@ const CasesProcess = () => {
                     <InputSearch/>
                 </SearchStyled>
                 <ListCases>
-                    <CardCaseBig/>
-                    <CardCaseBig/>
-                    <CardCaseBig/>
-                    <CardCaseBig/>
-                    <CardCaseBig/>
-                    <CardCaseBig/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/case')}/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/case')}/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/case')}/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/case')}/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/case')}/>
+                    <CardCaseBig onClick={()=>pushLocation('/profile/case')}/>
                 </ListCases>
             </CasesProcessStyled>
         </LayouMain>
