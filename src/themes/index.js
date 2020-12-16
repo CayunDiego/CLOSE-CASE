@@ -20,6 +20,7 @@ export const colors = {
         base: '#EBE7E7', ///(SE USA EN LOS CAMPOS DE FORMULARIOS).
         light: '#F2F2F2', ///(SE USA EN ALGUNAS TARJETAS).
         dark:'#C0C0C0', ///(SE USA EN LOS ICONOS DEL BOTTOM NAV).
+        extraDark: '#898989' ///(SE USA EN LOS ITEMS NO ACTIVOS DEL NAVBAR).
     },
     yellow:{
         base: '#FFC107', /// PARA LA CAMPANITA DE NOTIFICACIONES.

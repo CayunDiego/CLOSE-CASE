@@ -1,15 +1,18 @@
 import React from 'react';
-import { CaseHistoryStyled,
-         SearchStyled,
-         FilterContainerStyled,
-         ListCases
-        } from './caseHistory.styles';
+import { useLocation } from 'wouter';
 import LayouMain from '../Layout/Layout.main';
-import { Title, 
-        InputSearch, 
-        SelectFilter,
-        CardHitory
-    } from '../../components';
+import {
+    CaseHistoryStyled,
+    SearchStyled,
+    FilterContainerStyled,
+    ListCases
+} from './caseHistory.styles';
+import {
+    Title, 
+    InputSearch, 
+    SelectFilter,
+    CardHistory
+} from '../../components';
 
 const optionsType = [
     {name: 'Comercial', icon: ''},
@@ -24,8 +27,10 @@ const optionsOrder = [
     {name: 'Z-A', icon: ''},
     {name: 'Fecha', icon: ''},
 ];
- 
+
 const CaseHistory = () => {
+    const [, pushLocation ] = useLocation();
+
     return (
         <LayouMain>
             <CaseHistoryStyled>
@@ -34,7 +39,7 @@ const CaseHistory = () => {
                 </Title>
                 <SearchStyled>
                     <FilterContainerStyled>
-                         <SelectFilter 
+                        <SelectFilter 
                             label={'Tipo de Caso:'}
                             options={optionsType}/>
                         <SelectFilter 
@@ -44,16 +49,16 @@ const CaseHistory = () => {
                     <InputSearch/>
                 </SearchStyled>
                 <ListCases>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
-                    <CardHitory/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
                 </ListCases>
             </CaseHistoryStyled>
         </LayouMain>
-    )
+    );
 }
 
 export default CaseHistory;

@@ -1,8 +1,8 @@
 import React from 'react';
-import { CardCaseBigStyled, HeaderStyled, DisplayStyled } from './cardCaseBig.styles';
 import Button from '../Button';
+import { CardCaseBigStyled, HeaderStyled, DisplayStyled } from './cardCaseBig.styles';
 
-const CardCaseBig = () => {
+const CardCaseBig = ({onClick}) => {
     return (
         <CardCaseBigStyled>
             <HeaderStyled>
@@ -20,9 +20,7 @@ const CardCaseBig = () => {
                 <p>Recordatorio + </p>
                 <p>anotaciones del abogado</p>
             </DisplayStyled>
-            <Button>
-                INGRESAR
-            </Button>
+            <Button onClick={onClick}>INGRESAR</Button>
         </CardCaseBigStyled>
     )
 }

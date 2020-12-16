@@ -1,24 +1,24 @@
 import GlobalStyle from './themes/GlobalStyle';
-import { Route } from 'wouter'
+import { Route, Switch } from 'wouter';
 import { SearchContextProvider } from './context/searchContext';
 import { 
-         AddCase,
-         AddressBook,
-         Calendar,
-         CaseHistory,
-         CaseProfile,
-         CasesProcess,
-         Home,
-         LayoutBase,
-         Login,
-         Notifications,
-         Onboarding,
-         RecoverAccount,
-         Setting,
-         Splash,
-         Sigup,
-         UserProfile
-        } from './pages';
+  AddCase,
+  AddressBook,
+  Calendar,
+  CaseHistory,
+  CaseProfile,
+  CasesProcess,
+  Home,
+  LayoutBase,
+  Login,
+  Notifications,
+  Onboarding,
+  RecoverAccount,
+  Setting,
+  Splash,
+  Sigup,
+  UserProfile
+} from './pages';
 
 function App() {
   return (
@@ -39,7 +39,10 @@ function App() {
             <Route path="/notifications" component={Notifications}/>
             <Route path="/addressBook" component={AddressBook}/>
             <Route path="/setting" component={Setting}/>
-            <Route path="/profile/case" component={CaseProfile}/>
+            <Switch>
+              <Route path="/profile/case" component={CaseProfile}/>
+              <Route path="/profile/new-case" component={CaseProfile}/>
+            </Switch>
             <Route path="/profile/user" component={UserProfile}/>
           </SearchContextProvider>
       </LayoutBase>
@@ -47,4 +50,4 @@ function App() {
   );
 }
 
-export default App;   
+export default App;

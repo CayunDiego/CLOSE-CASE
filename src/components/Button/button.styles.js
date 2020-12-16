@@ -51,7 +51,7 @@ const changeColors = color => {
                     }
                 `)
             )
-        case 'four':
+        case 'fourth':
             return (
                 (css`
                     background-color: ${colors.green.base};
@@ -62,7 +62,7 @@ const changeColors = color => {
                     }
                 `)
             )
-        case 'five':
+        case 'fifth':
             return (
                 (css`
                     background-color: #D3D3D3;

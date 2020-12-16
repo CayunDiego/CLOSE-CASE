@@ -21,7 +21,7 @@ import Menu from './Menu.icon';
 import Search from './Search.icon';
 import Setting from './Setting.icon';
 import Share from './Share.icon';
-import Sheet from './Share.icon';
+import Sheet from './Sheet.icon';
 import Spreadsheet from './Spreadsheet.icon';
 import Tools from './Tools.icon';
 import Users from './Users.icon';
