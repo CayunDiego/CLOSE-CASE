@@ -43,7 +43,7 @@ function App() {
             <Route path="/profile/user" component={UserProfile}/>
           </SearchContextProvider>
       </LayoutBase>
-    </>
+    </> 
   );
 }
 

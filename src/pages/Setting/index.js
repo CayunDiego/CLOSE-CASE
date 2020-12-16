@@ -40,7 +40,9 @@ const Setting = () => {
                         Configuracion de  notificaciones
                     </ButtonStyled>
                 </ContentStyled>
-                <ButtonsLogout>
+                <ButtonsLogout
+                    onClick={() => window.location = 'https://close-case.vercel.app/'}
+                >
                     Cerrar Sesión 
                 </ButtonsLogout>
             </SettingStyled>

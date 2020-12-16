@@ -4,7 +4,8 @@ import { PopupSearchStyled,
          IconStyled,
          SearchStyled,
          FilterContainerStyled,
-         ListCaseSearch} from './popupSearch.styles';
+         ListCaseSearch,
+         PopupClickCancel} from './popupSearch.styles';
 import { Button, 
          Title, 
          SelectFilter, 
@@ -31,19 +32,14 @@ const PopupSearch = () => {
     const [, pushLocation ] = useLocation();
     const { search, setSearch } = useContext(searchContext);
 
-    const handleClick = e => {
-        e.preventDefault();
-        e.stopPropagation() ;
-        console.log('hola')
-    }
-
-    const handleClickBuscar = e => {
+    const handleClickSearch = e => {
         setSearch(false);
-        pushLocation('/home')
+        pushLocation('/home');
     }
 
     return (
-        <PopupSearchStyled onClick={handleClick}>
+        <PopupSearchStyled>
+            <PopupClickCancel onClick={()=>setSearch(false)}/>
             <PopupContainerStyled>
                 <Title>
                     <IconStyled>
@@ -68,7 +64,7 @@ const PopupSearch = () => {
 
                 </ListCaseSearch>
                 <Button
-                    onClick={handleClickBuscar}
+                    onClick={handleClickSearch}
                     size='large'
                     color='primary'
                 >

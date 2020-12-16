@@ -1,20 +1,16 @@
 import React from 'react';
 import { PopupRecoverStyled,
-         PopupContainerStyled } from './popupRecover.styles';
+         PopupContainerStyled,
+         PopupClickCancel } from './popupRecover.styles';
 import Button from '../Button';
 import { useLocation } from 'wouter';
 
-const PopupRecover = () => {
+const PopupRecover = ({onClick}) => {
     const [, pushLocation ] = useLocation();
 
-    const handleClick = e => {
-        e.preventDefault();
-        e.stopPropagation() ;
-        console.log('hola')
-    }
-
     return (
-        <PopupRecoverStyled onClick={handleClick}>
+        <PopupRecoverStyled >
+            <PopupClickCancel onClick={onClick}/>
             <PopupContainerStyled>
                 <h2>Recuperar:</h2>
                 <Button

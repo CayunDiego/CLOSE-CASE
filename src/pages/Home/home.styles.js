@@ -7,6 +7,14 @@ export const HomeStyled = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    @media (max-height: 640px) {
+        margin: 0 0 2rem 0;
+        height: 80vh;
+    }
+    @media (max-height: 623px) {
+        margin: 2rem 0 3rem 0;
+        height: 80vh;
+    }
 `;
 
 export const ButtonsGridStyled = styled.div`
