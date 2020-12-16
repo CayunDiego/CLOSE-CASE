@@ -49,12 +49,12 @@ const CaseHistory = () => {
                     <InputSearch/>
                 </SearchStyled>
                 <ListCases>
-                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
-                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
-                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
-                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
-                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
-                    <CardHistory onClick={()=>pushLocation('/profile/new-case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/case')}/>
+                    <CardHistory onClick={()=>pushLocation('/profile/case')}/>
                 </ListCases>
             </CaseHistoryStyled>
         </LayouMain>

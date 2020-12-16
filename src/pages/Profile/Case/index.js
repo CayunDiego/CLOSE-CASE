@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 import LayoutMain from '../../Layout/Layout.main';
-import { HeadProfile, CardInformation, CardHistory } from '../../../components';
+import { HeadProfile, CardInformation, CardHistory, Button } from '../../../components';
 import { Info, Edit, BellActive, Calendar, Sheet} from '../../../components/icons';
 import {
     CaseProfileContainer,
     StyledLi,
     IconsContainer,
-    IconStyled
+    IconStyled,
+    ImgDocumentStyled,
+    MainButtonsContainer,
+    FirstButtonsContainer,
+    LastContainer
 } from './case.styles';
+import { useLocation } from 'wouter';
 
 const CaseProfile = () => {
+    const [ path ] = useLocation();
     const [ color, setColor ] = useState("third");
     const [ isActive, setIsActive ] = useState(true);
     const [ title, setTitle] = useState("Finalizar");
@@ -63,17 +69,31 @@ const CaseProfile = () => {
                     children={cardItems}
                     icon2={<Edit/>}
                 />
-                <IconsContainer>
-                    <IconStyled>
-                        <Sheet/>
-                    </IconStyled>
-                    <IconStyled>
-                        <BellActive/>
-                    </IconStyled>
-                    <IconStyled>
-                        <Calendar/>
-                    </IconStyled>
-                </IconsContainer>
+                {path.includes('/profile/new-case') ?
+                    <IconsContainer>
+                        <IconStyled>
+                            <Sheet/>
+                        </IconStyled>
+                        <IconStyled>
+                            <BellActive/>
+                        </IconStyled>
+                        <IconStyled>
+                            <Calendar/>
+                        </IconStyled>
+                    </IconsContainer>
+                    :
+                    <LastContainer>
+                        <CardHistory/>
+                        <ImgDocumentStyled src="/assets/documento.png" alt="documento"/>
+                        <MainButtonsContainer>
+                            <FirstButtonsContainer>
+                                <Button children="Ver"/>
+                                <Button children="Editar"/>
+                            </FirstButtonsContainer>
+                            <Button children="Imprimir"/>
+                        </MainButtonsContainer>
+                    </LastContainer>
+                }
             </CaseProfileContainer>
         </LayoutMain>
     );

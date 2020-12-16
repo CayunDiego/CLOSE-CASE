@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ButtonIcon from '../ButtonIcon';
 import SideDrawer from '../SideDrawer';
-import { Menu, BellActive } from '../icons';
+import { Menu, BellActive, Share } from '../icons';
 import {
     ContainerStyled,
     HeaderStyled,
@@ -10,17 +10,17 @@ import {
 import { useLocation } from 'wouter';
 
 const Header = () => {
-    const [sideDraweOpen, setsideDraweOpen] = useState(false);
+    const [ path ] = useLocation();
     const [, pushLocation] = useLocation();
+    const [sideDraweOpen, setsideDraweOpen] = useState(false);
 
     const drawerToggleClick = () =>{
         setsideDraweOpen(!sideDraweOpen);
     }
 
-
     return (
         <>
-             <SideDrawer 
+            <SideDrawer 
                 click={drawerToggleClick} 
                 sideDraweOpen={sideDraweOpen}/>
                 <HeaderStyled>
@@ -32,7 +32,11 @@ const Header = () => {
                         <ButtonIcon 
                             onClick={()=>pushLocation('/notifications')}
                         >
-                            <BellActive/>
+                            {path.includes('/profile/case') ?
+                                <Share/>
+                                :
+                                <BellActive/>
+                            }
                         </ButtonIcon>
                     </ContainerStyled>
                 </HeaderStyled>
