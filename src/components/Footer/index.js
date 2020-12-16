@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { FooterNavbarStyled, ContainerStyled } from './footer.styles';
 import ButtonIcon from '../ButtonIcon'
 import { Home, Add, Search } from '../icons';
@@ -14,6 +14,7 @@ const itemsbutton = [
 const Footer = () => {
     const [ path, pushLocation] = useLocation();
     const { search, setSearch } = useContext(searchContext);
+    const [color, setColor] = useState('secondary')
 
     const handleOnClick = button => {
         pushLocation(button.url);
@@ -22,13 +23,17 @@ const Footer = () => {
         }
     }
 
+    const handleColor = (button) => {
+       return path === button.url ? 'tertiary' : 'secondary';
+    }
+
     return (
         <FooterNavbarStyled>
             <ContainerStyled>
                 {
                     itemsbutton.map( (button, index) => 
                         <ButtonIcon 
-                            color='secondary'
+                            color={handleColor(button)}
                             size='small'
                             key={index}
                             onClick={() => handleOnClick(button)}
@@ -42,4 +47,4 @@ const Footer = () => {
     )
 }
 
-export default Footer; 
+export default Footer;
