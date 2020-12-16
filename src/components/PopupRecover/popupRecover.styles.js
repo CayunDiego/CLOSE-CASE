@@ -26,11 +26,18 @@ export const PopupContainerStyled = styled.div`
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        z-index: 251;
+        z-index: 252;
         >h2{
             font-size: ${typography.sizes.h2};
             font-weight:  ${typography.weights.regular};
             align-self: flex-start;
             color: #515151;
         }
+`;
+
+export const PopupClickCancel = styled.div`
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 251;
 `;

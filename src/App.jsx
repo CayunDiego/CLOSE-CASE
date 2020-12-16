@@ -44,7 +44,7 @@ function App() {
           </SearchContextProvider>
       </LayoutBase>
     </> 
-  );  
+  );
 }
 
 export default App;   

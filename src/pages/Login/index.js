@@ -17,7 +17,7 @@ const Login = () => {
     return (
         <LayouAuth>
             { 
-                popUp && <PopupRecover/>
+                popUp && <PopupRecover onClick={()=>setPopUp(false)}/>
             }
             <LoginStyled>
                 <Title>
